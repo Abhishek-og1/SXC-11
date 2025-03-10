@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>Preprocessor Directive And Errors</title>
+</head>
+<body style="font-family: Times New Roman;">
+  <h1 style="color:black; text-align: center;font-family:Stencil;">ST. XAVIER'S COLLEGE</h1>
+  <h3 style="color:black; text-align: center;">MAITIGHAR, KATHMANDU, NEPAL</h3>
+    <h3 style="color:black; text-align: center;">Phone: 01-5321365, 01-5344636</h3>
+    <h3 style="color:black; text-align: center;">Email: ktm@sxc.edu.np</h3>
+    <div style="text-align: center;">
+    <img src="C:\Users\USER\Downloads\St._Xavier's_College logo.jpg" class="center">
+     </div>
+   <b><h3 style="color:black; text-align: center;">ASSIGNMENT NUMBER:1</h3></b>
+   <b><h3 style="color:black; text-align: center;">Preprocessor Directive And Errors</h3></b>
+
+   <table border="1" style="margin: auto;">
+    <th>Submitted By</th><th>Submitted To</th><th>Signature</th>
+    <tr><td>Name:Abhishek Bajagain<br>Roll No:855<br>Class:11<br>Section:H<br></td><td>Department of <br>Computer Science(+2)</td><td></td></tr>
+   </table>
+  
+  <h3 style="color:black; text-align: center;">Submission Date:10<sup> th</sup> March, 2025</h2>
+<hr>
+ 
+ <h3 style="color:black; text-align:justify;">Table Of Contents</h3>
+ <p>Preprocessor Directive<br>Error and Types
+ </p><br><hr>
+ 
+ <h4 style="color:black; text-align:justify;">Preprocessor Directive</h4>
+ <h4><b>Code:</b></h4>
+
+  <pre style="font-family: Times New Roman;">
+  #include &lt;stdio.h&gt;  // Preprocessor directive to include the standard I/O library
+
+#define PI 3.14159   // Macro definition
+
+int main() {
+    float radius, area;
+
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    area = PI * radius * radius;  // Using the defined macro
+
+    printf("The area of the circle is: %.2f\n", area);
+    
+    return 0;
+}
+
+ </pre>
+ 
+ <h4><b>Output:</b></h4>
+ <img src="C:\Users\USER\Pictures\Screenshots\Screenshot 2025-03-10 231208.png" Width ="500"><br><hr>
+ 
+ <h4 style="color:black; text-align:justify;">Error and Types</h4>
+ <h4><b>Code:</b></h4>
+ <pre style="font-family: Times New Roman;">
+  #include &lt;stdio.h&gt;  // Preprocessor directive
+
+int main() {
+    //  Syntax Error: Missing semicolon
+    int a = 10, b = 5  
+    int sum = a + b;  // Correct formula (but previous error stops compilation)
+
+    //  Logical Error: Incorrect formula for multiplication
+    int product = a - b;  // Expected a * b, but used subtraction instead
+
+    //  Runtime Error: Division by zero
+    int x = 10, y = 0;
+    int result = x / y;  // Causes a runtime crash
+
+    printf("Sum: %d\n", sum);
+    printf("Product (incorrect): %d\n", product);
+    printf("Result of division: %d\n", result); // Won't execute due to runtime error
+
+    return 0;
+}
+
+
+ </pre>
+ 
+ <h4><b>Output:</b></h4>
+ <img src="C:\Users\USER\Pictures\Screenshots\Screenshot 2025-03-10 231515.png" Width ="500"><br><hr>
+
+</body>
+</html>
