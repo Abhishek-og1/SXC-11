@@ -1,0 +1,128 @@
+<html>
+	<head>
+	<title> C Programming Lab Class Assignment </title>
+	<link rel="Stylesheet" href="coverpage855.css">
+	</head>
+<body style="font-family: Times New Roman;">
+  <h1 style="color:black; text-align: center;font-family:Stencil;">ST. XAVIER'S COLLEGE</h1>
+  <h3 style="color:black; text-align: center;">MAITIGHAR, KATHMANDU, NEPAL</h3>
+    <h3 style="color:black; text-align: center;">Phone: 01-5321365, 01-5344636</h3>
+    <h3 style="color:black; text-align: center;">Email: ktm@sxc.edu.np</h3>
+    <div style="text-align: center;">
+    <img src="C:\Users\Students\Downloads\logo.png" class="center" height="450" width="400"> 
+     </div>
+   <b><h3 style="color:black; text-align: center;">ASSIGNMENT NUMBER:1</h3></b>
+   <b><h3 style="color:black; text-align: center;">C Programming Lab Class Assingment</h3></b>
+
+   <table border="1" style="margin: auto;">
+    <th>Submitted By</th><th>Submitted To</th><th>Signature</th>
+    <tr><td>Name:Abhishek Bajagain<br>Roll No:855<br>Class:11<br>Section:H<br></td><td>Department of <br>Computer Science(+2)</td><td></td></tr>
+   </table>
+  
+  <h3 style="color:black; text-align: center;">Submission Date:11<sup> th</sup> March, 2025</h2>
+<hr>
+
+<h3 style="text-font:Times New Roman;"> Control Structures </h3>
+
+<pre style="font-family:Times New Roman";>
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    // If-Else Example: Check if the number is positive, negative, or zero
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    if (number > 0) {
+        printf("The number is positive.\n");
+    } else if (number < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    }
+
+    // Switch Example: Weekday check
+    int day;
+    printf("Enter a day number (1-7): ");
+    scanf("%d", &day);
+
+    switch(day) {
+        case 1: 
+            printf("Sunday\n");
+            break;
+        case 2: 
+            printf("Monday\n");
+            break;
+        case 3: 
+            printf("Tuesday\n");
+            break;
+        case 4: 
+            printf("Wednesday\n");
+            break;
+        case 5: 
+            printf("Thursday\n");
+            break;
+        case 6: 
+            printf("Friday\n");
+            break;
+        case 7: 
+            printf("Saturday\n");
+            break;
+        default:
+            printf("Invalid day number.\n");
+    }
+
+    // Declare 'i' before the for loop
+    int i;
+    
+    // For Loop Example: Print the first 10 numbers
+    printf("\nFor Loop Example: Print first 10 numbers\n");
+    for (i = 1; i <= 10; i++) {  // 'i' is declared outside the loop now
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    // While Loop Example: Find sum of numbers until user enters 0
+    int num, sum = 0;
+    printf("\nWhile Loop Example: Find sum of numbers (enter 0 to stop)\n");
+    while (1) {
+        printf("Enter a number (0 to stop): ");
+        scanf("%d", &num);
+        
+        if (num == 0) {
+            break;
+        }
+        sum += num;
+    }
+    printf("Sum of entered numbers: %d\n", sum);
+
+    // Do-While Loop Example: Print numbers from 1 to 5
+    int j = 1;
+    printf("\nDo-While Loop Example: Print numbers from 1 to 5\n");
+    do {
+        printf("%d ", j);
+        j++;
+    } while (j <= 5);
+    printf("\n");
+
+    // Break Example: Using break to exit a loop early
+    printf("\nBreak Example: Exit loop early\n");
+    for (int i = 1; i <= 10; i++) {
+        if (i == 6) {
+            printf("Breaking at i = %d\n", i);
+            break; // Exit the loop early
+        }
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    return 0;
+}
+</pre>
+
+<img src="C:\Users\Students\Pictures\Screenshots\Screenshot 2025-03-11 143706.png" height="500" width="400">
+
+</body>
+</html>
